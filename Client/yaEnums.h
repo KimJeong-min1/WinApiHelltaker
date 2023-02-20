@@ -14,6 +14,7 @@ enum class eLayerType
 {
 	BG,
 	Monster,
+	NPC,
 	Player,
 	Effect,
 	UI,
