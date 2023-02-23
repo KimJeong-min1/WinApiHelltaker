@@ -8,12 +8,12 @@ namespace ya
 
 	void SceneManager::Initialize()
 	{
-		mScenes.resize((UINT)eSceneType::Max);
+		mScenes.resize((UINT)eSceneType::End);
 
 		mScenes[(UINT)eSceneType::Play] = new PlayeScene();
 		mScenes[(UINT)eSceneType::Play]->SetName(L"PLAYER");
 
-		for ( Scene* scene : mScenes )
+		for (Scene* scene : mScenes)
 		{
 			if (scene == nullptr)
 				continue;
@@ -24,14 +24,6 @@ namespace ya
 
 	void SceneManager::Update()
 	{
-		//for (size_t i = 0; i < (UINT)eSceneType::Max; i++)
-		//{
-		//	if (mScenes[i] == nullptr)
-		//		continue;
-
-		//	mScenes[i]->Update();
-		//}
-		//read only
 		for (Scene* scene : mScenes)
 		{
 			if (scene == nullptr)
@@ -59,10 +51,9 @@ namespace ya
 			if (scene == nullptr)
 				continue;
 
-			scene->Release();
+			delete scene;
+			scene = nullptr;
 		}
-
-		//delete[] mScene;
 	}
 
 }

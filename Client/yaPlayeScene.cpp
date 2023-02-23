@@ -14,6 +14,7 @@ namespace ya
 	void PlayeScene::Initialize()
 	{
 		Helltaker* helltaker = new Helltaker();
+		helltaker->SetName(L"Player");
 		AddGameObeject(helltaker, eLayerType::Player);
 
 		Scene::Initialize();

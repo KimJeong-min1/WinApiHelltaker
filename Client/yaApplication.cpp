@@ -13,7 +13,7 @@ namespace ya
 
 	Application::~Application()
 	{
-		SceneManager::Release();
+		//SceneManager::Release();
 		//Time::Release();
 	}
 

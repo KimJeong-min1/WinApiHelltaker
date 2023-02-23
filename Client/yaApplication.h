@@ -16,6 +16,7 @@ namespace ya
 		void Render();
 
 		HWND GetHwnd() { return mHwnd; }
+		HDC GetHdc() { return mHdc; }
 
 	private:
 		HWND mHwnd;
@@ -29,7 +30,5 @@ namespace ya
 		UINT mHeight;
 
 		Vector2 mPos;
-
-		//Scene mScene[256];
 	};
 }

@@ -7,7 +7,7 @@ enum class eSceneType
 	Title,
 	Play,
 	Ending,
-	Max,
+	End,
 };
 
 enum class eLayerType
