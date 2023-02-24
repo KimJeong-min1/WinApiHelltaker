@@ -1,24 +1,23 @@
+
 #pragma once
-#include "yaScene.h"
+#include "yaGameObject.h"
+#include "yaImage.h"
 
 namespace ya
 {
-	class PlayeScene : public Scene
+	class CutBG : public GameObject
 	{
 	public:
-		PlayeScene();
-		~PlayeScene();
+		CutBG();
+		~CutBG();
 
 		virtual void Initialize() override;
 		virtual void Update() override;
 		virtual void Render(HDC hdc) override;
 		virtual void Release() override;
-		
-		virtual void OnEnter() override;
-		virtual void OnExit() override;
 
 	private:
-		/*Helltaker* mhelltaker;
-		playBG* mplaybg;*/
+		Image* mImage;
 	};
 }
+

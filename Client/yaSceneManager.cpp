@@ -1,17 +1,21 @@
 #include "yaSceneManager.h"
 #include "yaPlayeScene.h"
-
+#include "yaCutScene.h"
 namespace ya
 {	//SceneManager scsene;
 	//SceneManager* scsene = new SceneManager();
 	std::vector<Scene*> SceneManager::mScenes = {};
+	Scene* SceneManager::mActiveScene = nullptr;
 
 	void SceneManager::Initialize()
 	{
 		mScenes.resize((UINT)eSceneType::End);
 
+		mScenes[(UINT)eSceneType::Cut] = new CutScene();
 		mScenes[(UINT)eSceneType::Play] = new PlayeScene();
-		mScenes[(UINT)eSceneType::Play]->SetName(L"PLAYER");
+		
+
+		mActiveScene = mScenes[(UINT)eSceneType::Play];
 
 		for (Scene* scene : mScenes)
 		{
@@ -24,25 +28,13 @@ namespace ya
 
 	void SceneManager::Update()
 	{
-		for (Scene* scene : mScenes)
-		{
-			if (scene == nullptr)
-				continue;
-
-			scene->Update();
-		}
+			mActiveScene->Update();	
 	}
 
 	void SceneManager::Render(HDC hdc)
 	{
-		for (Scene* scene : mScenes)
-		{
-			if (scene == nullptr)
-				continue;
-
-			scene->Render(hdc);
-		}
-	}
+			mActiveScene->Render(hdc);
+	} 
 
 	void SceneManager::Release()
 	{
@@ -54,6 +46,13 @@ namespace ya
 			delete scene;
 			scene = nullptr;
 		}
+	}
+
+	void SceneManager::LoadScene(eSceneType type)
+	{
+		mActiveScene->OnExit();
+		mActiveScene = mScenes[(UINT)type];
+		mActiveScene->OnEnter();
 	}
 
 }

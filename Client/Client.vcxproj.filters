@@ -121,13 +121,6 @@
     <ClInclude Include="yaInput.h">
       <Filter>Engine\Input</Filter>
     </ClInclude>
-    <ClInclude Include="yaTEscene.h">
-      <Filter>Engine\Scene\TextureScene</Filter>
-    </ClInclude>
-    <ClInclude Include="yaTEsceneManager.h">
-      <Filter>Engine\Scene\TextureScene</Filter>
-    </ClInclude>
-    <ClInclude Include="yaImage.h" />
     <ClInclude Include="yaResource.h">
       <Filter>Engine\Resource</Filter>
     </ClInclude>
@@ -136,6 +129,18 @@
     </ClInclude>
     <ClInclude Include="yaplayBG.h">
       <Filter>Contents\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="yaImage.h">
+      <Filter>Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="yaCutScene.h">
+      <Filter>Contents\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="yaCutBG.h">
+      <Filter>Contents\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="yaTransform.h">
+      <Filter>Engine\Component</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -182,22 +187,12 @@
     <ClCompile Include="yaHelltaker.cpp">
       <Filter>Contents\Player</Filter>
     </ClCompile>
-    <ClCompile Include="yaPlayeScene.cpp">
-      <Filter>Contents\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="yaTime.cpp">
       <Filter>Engine\Time</Filter>
     </ClCompile>
     <ClCompile Include="yaInput.cpp">
       <Filter>Engine\Input</Filter>
     </ClCompile>
-    <ClCompile Include="yaTEscene.cpp">
-      <Filter>Engine\Scene\TextureScene</Filter>
-    </ClCompile>
-    <ClCompile Include="yaTEsceneManager.cpp">
-      <Filter>Engine\Scene\TextureScene</Filter>
-    </ClCompile>
-    <ClCompile Include="yaImage.cpp" />
     <ClCompile Include="yaResource.cpp">
       <Filter>Engine\Resource</Filter>
     </ClCompile>
@@ -206,6 +201,21 @@
     </ClCompile>
     <ClCompile Include="yaplayBG.cpp">
       <Filter>Contents\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="yaImage.cpp">
+      <Filter>Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="yaCutScene.cpp">
+      <Filter>Contents\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="yaCutBG.cpp">
+      <Filter>Contents\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="yaTransform.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="yaPlayeScene.cpp">
+      <Filter>Contents\Scene</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

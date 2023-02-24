@@ -41,6 +41,12 @@ namespace ya
 			layer.Release();
 		}
 	}
+	void Scene::OnEnter()
+	{
+	}
+	void Scene::OnExit()
+	{
+	}
 	void Scene::AddGameObeject(GameObject* obj, eLayerType layer)
 	{
 		mLayers[(UINT)layer].AddGameObject(obj);

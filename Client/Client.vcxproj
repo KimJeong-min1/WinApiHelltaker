@@ -130,6 +130,8 @@
   <ItemGroup>
     <ClInclude Include="Client.h" />
     <ClInclude Include="CommonInclude.h" />
+    <ClInclude Include="yaCutBG.h" />
+    <ClInclude Include="yaCutScene.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
@@ -150,11 +152,12 @@
     <ClInclude Include="yaResources.h" />
     <ClInclude Include="yaScene.h" />
     <ClInclude Include="yaSceneManager.h" />
-    <ClInclude Include="yaTEscene.h" />
-    <ClInclude Include="yaTEsceneManager.h" />
     <ClInclude Include="yaTime.h" />
+    <ClInclude Include="yaTransform.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="yaCutBG.cpp" />
+    <ClCompile Include="yaCutScene.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="yaApplication.cpp" />
     <ClCompile Include="yaComponent.cpp" />
@@ -171,9 +174,8 @@
     <ClCompile Include="yaResources.cpp" />
     <ClCompile Include="yaScene.cpp" />
     <ClCompile Include="yaSceneManager.cpp" />
-    <ClCompile Include="yaTEscene.cpp" />
-    <ClCompile Include="yaTEsceneManager.cpp" />
     <ClCompile Include="yaTime.cpp" />
+    <ClCompile Include="yaTransform.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Client.rc" />

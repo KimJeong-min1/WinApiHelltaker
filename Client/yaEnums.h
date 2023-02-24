@@ -4,7 +4,7 @@
 enum class eSceneType
 {
 	Texture,
-	Title,
+	Cut,
 	Play,
 	Ending,
 	End,
@@ -12,11 +12,22 @@ enum class eSceneType
 
 enum class eLayerType
 {
+	CutScene,
 	BG,
 	Monster,
 	NPC,
 	Player,
 	Effect,
 	UI,
+	End,
+};
+
+enum class eComponentType
+{
+	Transform,
+	Collider,
+	SpriteRenderer,
+	Animator,
+	Audio,
 	End,
 };

@@ -15,6 +15,9 @@ namespace ya
 		virtual void Render(HDC hdc);
 		virtual void Release();
 
+		virtual void OnEnter();
+		virtual void OnExit();
+
 		void AddGameObeject(GameObject* obj, eLayerType layer);
 
 	private:

@@ -1,4 +1,4 @@
-#include "yaplayBG.h"
+#include "yaCutBG.h"
 #include "yaTime.h"
 #include "yaSceneManager.h"
 #include "yaInput.h"
@@ -8,29 +8,29 @@
 
 namespace ya
 {
-	playBG::playBG()
+	CutBG::CutBG()
 	{
 	}
-	playBG::~playBG()
+	CutBG::~CutBG()
 	{
 	}
-	void playBG::Initialize()
+	void CutBG::Initialize()
 	{
-		mImage = Resources::Load<Image>(L"BG", L"..\\Resource\\bmp\\chapterBG0001.bmp");
+		mImage = Resources::Load<Image>(L"Cut", L"..\\Resource\\bmp\\CutScene0000.bmp");
 		GameObject::Initialize();
 	}
-	void playBG::Update()
+	void CutBG::Update()
 	{
-		GameObject::Update();	
+		GameObject::Update();
 	}
-	void playBG::Render(HDC hdc)
+	void CutBG::Render(HDC hdc)
 	{
 		GameObject::Render(hdc);
 		Transform* tr = GetComponent<Transform>();
 		Vector2 pos = tr->GetPos();
 		BitBlt(hdc, pos.x, pos.y, mImage->GetWidth(), mImage->GetHeight(), mImage->GetHdc(), 0, 0, SRCCOPY);
 	}
-	void playBG::Release()
+	void CutBG::Release()
 	{
 		GameObject::Release();
 
