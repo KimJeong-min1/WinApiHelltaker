@@ -16,7 +16,6 @@ namespace ya
 	void Helltaker::Initialize()
 	{
 		mImage = Resources::Load<Image>(L"Helltaker", L"..\\Resource\\bmp\\Helltaker.bmp");
-
 		GameObject::Initialize();
 	}
 	void Helltaker::Update()

@@ -144,6 +144,7 @@
     <ClInclude Include="yaLayer.h" />
     <ClInclude Include="yaMath.h" />
     <ClInclude Include="YamYamEngine.h" />
+    <ClInclude Include="yaplayBG.h" />
     <ClInclude Include="yaPlayeScene.h" />
     <ClInclude Include="yaResource.h" />
     <ClInclude Include="yaResources.h" />
@@ -151,7 +152,6 @@
     <ClInclude Include="yaSceneManager.h" />
     <ClInclude Include="yaTEscene.h" />
     <ClInclude Include="yaTEsceneManager.h" />
-    <ClInclude Include="yaTexturescene.h" />
     <ClInclude Include="yaTime.h" />
   </ItemGroup>
   <ItemGroup>
@@ -165,6 +165,7 @@
     <ClCompile Include="yaInput.cpp" />
     <ClCompile Include="yaLayer.cpp" />
     <ClCompile Include="yaMath.cpp" />
+    <ClCompile Include="yaplayBG.cpp" />
     <ClCompile Include="yaPlayeScene.cpp" />
     <ClCompile Include="yaResource.cpp" />
     <ClCompile Include="yaResources.cpp" />
@@ -172,7 +173,6 @@
     <ClCompile Include="yaSceneManager.cpp" />
     <ClCompile Include="yaTEscene.cpp" />
     <ClCompile Include="yaTEsceneManager.cpp" />
-    <ClCompile Include="yaTexturescene.cpp" />
     <ClCompile Include="yaTime.cpp" />
   </ItemGroup>
   <ItemGroup>

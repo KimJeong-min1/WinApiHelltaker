@@ -1,5 +1,6 @@
 #include "yaPlayeScene.h"
 #include "yaHelltaker.h"
+#include "yaplayBG.h"
 
 namespace ya
 {
@@ -13,10 +14,13 @@ namespace ya
 
 	void PlayeScene::Initialize()
 	{
+		playBG* playbg = new playBG();
+		playbg->SetName(L"BG");
+		AddGameObeject(playbg, eLayerType::BG);
+		Scene::Initialize();
 		Helltaker* helltaker = new Helltaker();
 		helltaker->SetName(L"Player");
 		AddGameObeject(helltaker, eLayerType::Player);
-
 		Scene::Initialize();
 	}
 

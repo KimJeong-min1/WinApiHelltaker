@@ -59,6 +59,9 @@
     <Filter Include="Engine\Resource">
       <UniqueIdentifier>{5c33c186-1bb2-40d8-8fe6-c55dd894b6b4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\BackGround">
+      <UniqueIdentifier>{da6a9936-5e76-48a9-8be9-6f36b2d8381a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -124,15 +127,15 @@
     <ClInclude Include="yaTEsceneManager.h">
       <Filter>Engine\Scene\TextureScene</Filter>
     </ClInclude>
-    <ClInclude Include="yaTexturescene.h">
-      <Filter>Contents\Scene</Filter>
-    </ClInclude>
     <ClInclude Include="yaImage.h" />
     <ClInclude Include="yaResource.h">
       <Filter>Engine\Resource</Filter>
     </ClInclude>
     <ClInclude Include="yaResources.h">
       <Filter>Engine\Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="yaplayBG.h">
+      <Filter>Contents\BackGround</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -194,15 +197,15 @@
     <ClCompile Include="yaTEsceneManager.cpp">
       <Filter>Engine\Scene\TextureScene</Filter>
     </ClCompile>
-    <ClCompile Include="yaTexturescene.cpp">
-      <Filter>Contents\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="yaImage.cpp" />
     <ClCompile Include="yaResource.cpp">
       <Filter>Engine\Resource</Filter>
     </ClCompile>
     <ClCompile Include="yaResources.cpp">
       <Filter>Engine\Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="yaplayBG.cpp">
+      <Filter>Contents\BackGround</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
